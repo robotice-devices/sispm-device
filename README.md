@@ -1,27 +1,21 @@
-# Soil Hygrometer Detection Module Soil Moisture Sensor
+# Sispm socket
 
-Soil moisture module is most sensitive to the ambient humidity is generally used to detect the moisture content of the soil.
+SIS-PM Control for Linux aka sispmctl is an application enabling the use of the GEMBIRD (m)SiS-PM device family under Linux.
+The  SiS-PM is an itelligent advanced surge protector with unique features: 4 sockets are manageable from the PC via USB port (GEMBIRD LTD).
+The  mSiS-PM is an itelligent advanced surge protector with unique features: 1 socket is manageable from the PC via USB port (GEMBIRD LTD).
+
+The software works on many different platforms. I would be glad to here from you, on what platforms you are using this software. Also, send me any Howto's etc on how you got it to work on your router box etc.
+
+This software comes with ABSOLUTELY NO WARRANTY; for details see the LICENCE file. This is free software, and you are welcome to  redistribute it
+under certain conditions; see the LICENCE file for details.
+
+Thanks go out to Gembird  for the kind support, the libusb project, the USB snoopy team, Andreas Neuper and the other contributors.
+
 
 ### Example use
 
-    python driver.py -a armv7l -do P9_40 -ao P9_39
-
-
-### Service use
-
-python service.py -a armv6l -DO bcm25 -AO bcm18
-
-* requires daemonize
-
-### Instructions for use
-
-* Module to reach the threshold value is set in the soil moisture, DO port output high, when the soil humidity exceeds a set threshold value, the module D0 output low;
-* The digital output D0 can be connected directly with the microcontroller to detect high and low by the microcontroller to detect soil moisture;
-* The digital outputs DO shop relay module can directly drive the buzzer module, which can form a soil moisture alarm equipment
-* Analog output AO and AD module connected through the AD converter, you can get more precise values of soil moisture
+    TODO
 
 ### Read more
 
-* http://www.ebay.com/itm/Soil-Hygrometer-Detection-Module-Soil-Moisture-Sensor-For-arduino-Smart-car-/400364471802
-* http://electron-space.blogspot.cz/2013/09/soil-moisture-sensor-soil-hygrometer.html
-* https://github.com/jerbly/Pi/blob/master/raspi-adc-pot.py
+* http://sispmctl.sourceforge.net/
